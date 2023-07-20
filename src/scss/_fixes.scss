@@ -1,0 +1,39 @@
+// todo: disabled button styles
+button {
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+// todo: brand button icon margin
+.btn-brand:not(:only-child) {
+  .c-icon {
+    margin-top: 0 !important;
+  }
+}
+
+.btn-link:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+// Container that the modal scrolls within
+.modal {
+  z-index: $zindex-modal-backdrop;
+}
+
+// make icon in outline button transition to white
+.btn-outline-primary,
+.btn-outline-secondary,
+.btn-outline-success,
+.btn-outline-danger,
+.btn-outline-warning,
+.btn-outline-info,
+.btn-outline-light,
+.btn-outline-dark {
+  &:not(.disabled):hover img {
+    // filter: hue-rotate(180deg);
+    // -webkit-filter: hue-rotate(180deg);
+    filter: brightness(0) invert(1)
+  }
+}

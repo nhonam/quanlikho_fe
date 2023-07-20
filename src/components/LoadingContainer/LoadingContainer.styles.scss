@@ -1,0 +1,14 @@
+.loading-container-wapper {
+  position: relative;
+
+  .loading-container-spinner {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+  }
+
+  .loading-container-child {
+    opacity: 0.4;
+    // backdrop-filter: blur(1px);
+  }
+}

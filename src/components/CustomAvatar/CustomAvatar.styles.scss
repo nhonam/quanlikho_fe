@@ -1,0 +1,23 @@
+.CustomAvatar {
+    .imgAvatar {
+        width: 200px;
+        height: 200px;
+    }
+    .previewComponent {
+        text-align: center;
+    }
+    .upload-avatar {
+        margin: auto;
+        text-align: left;
+        margin-bottom: 8px;
+        margin-top: 8px;
+    }
+    .previewText {
+        border: 1px solid #2d8ad3;
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        line-height: 170px;
+        font-size: 2em;
+    }
+}

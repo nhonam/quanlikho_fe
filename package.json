@@ -1,0 +1,99 @@
+{
+  "name": "portal-resource",
+  "version": "3.3.0",
+  "description": "PortalResource",
+  "author": {
+    "name": "Chiba",
+    "url": "https://github.com/TranDuy13"
+  },
+
+  "copyright": "Copyright 2017-2020 creativeLabs Łukasz Holeczek",
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TranDuy13"
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-decoupled-document": "^31.1.0",
+    "@ckeditor/ckeditor5-react": "^3.0.3",
+    "@coreui/react": "^3.4.6",
+    "@coreui/react-chartjs": "^2.0.3",
+    "@date-io/date-fns": "1.3.13",
+    "@material-ui/core": "4.11.4",
+    "@material-ui/lab": "4.0.0-alpha.58",
+    "@material-ui/pickers": "^3.3.10",
+    "@microsoft/signalr": "^6.0.5",
+    "@reduxjs/toolkit": "^1.8.1",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.6",
+    "antd": "^4.17.4",
+    "autosuggest-highlight": "^3.3.4",
+    "axios": "^0.24.0",
+    "crypto-js": "^4.1.1",
+    "drawflow": "^0.0.59",
+    "enzyme": "^3.11.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "i18next": "^21.6.14",
+    "i18next-http-backend": "^1.3.2",
+    "interweave": "^13.0.0",
+    "perfect-scrollbar": "1.5.0",
+    "proxy-polyfill": "^0.3.2",
+    "react": "^17.0.2",
+    "react-apexcharts": "^1.4.0",
+    "react-app-polyfill": "^3.0.0",
+    "react-bootstrap": "^2.2.1",
+    "react-chartjs-2": "^4.3.1",
+    "react-dom": "^17.0.2",
+    "react-fast-marquee": "^1.3.1",
+    "react-google-recaptcha": "^2.1.0",
+    "react-hook-form": "^7.36.1",
+    "react-i18next": "^11.15.3",
+    "react-icons": "^4.4.0",
+    "react-image-crop": "^10.0.9",
+    "react-pdfobject": "^1.2.0",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^5.3.3",
+    "react-toastify": "^8.1.0",
+    "reactstrap": "^9.1.4",
+    "redux-thunk": "^2.4.1",
+    "sass": "^1.49.10",
+    "styled-components": "^5.3.5"
+  },
+  "devDependencies": {
+    "auto-changelog": "~2.2.1",
+    "react-scripts": "5.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "test:cov": "npm test -- --coverage --watchAll=false",
+    "test:debug": "react-scripts --inspect-brk test --runInBand",
+    "eject": "react-scripts eject",
+    "changelog": "auto-changelog --starting-version 3.0.0 --commit-limit false --hide-credit"
+  },
+  "bugs": {
+    "url": "https://github.com/coreui/coreui-free-react-admin-template/issues"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!**/*index.js",
+      "!src/serviceWorker.js",
+      "!src/polyfill.js"
+    ]
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  }
+}

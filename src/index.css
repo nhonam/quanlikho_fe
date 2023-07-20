@@ -1,0 +1,110 @@
+/* inspired by: https://css-tricks.com/responsive-data-tables/ */
+.responsiveTable {
+    width: 100%;
+    font-weight: 300px !important;
+  }
+  
+  .responsiveTable th .tdBefore, td .tdBefore {
+    display: none;
+  }
+
+  .responsiveTable td.pivoted a {
+        padding-right: 1em;
+  }
+  
+  /* .responsiveTable td.pivoted a i.fa.text-muted:hover {
+        color: #59c9e7 !important;
+  } */
+  
+  @media screen and (max-width:768px) {
+    /*
+      Force table elements to not behave like tables anymore
+      Hide table headers (but not display: none;, for accessibility)
+    */
+  
+    .responsiveTable table,
+    .responsiveTable thead,
+    .responsiveTable tbody,
+    .responsiveTable th,
+    .responsiveTable td,
+    .responsiveTable tr {
+      display: block;
+    }
+  
+    .responsiveTable thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+      border-bottom: 2px solid #333;
+    }
+  
+    .responsiveTable tbody tr {
+      /* border: 1px solid #d8dbe0; */
+      padding: .25em;
+    }
+    .responsiveTable tr .custom-check-cell{
+      border:0;
+      position: relative;
+    }
+    .responsiveTable tr .custom-check-cell::before{
+      position: absolute;
+      content: "\268A";
+      top:15px;
+      left: 15px;
+    }
+    .responsiveTable th.pivoted, .responsiveTable td.pivoted {
+      /* Behave like a "row" */
+      /* border: none !important; */
+      
+      position: relative;
+      padding-left: calc(55% + 10px) !important;
+      text-align: left !important;
+      white-space: pre-wrap;
+      overflow-wrap: break-word;
+      min-height: 2rem;
+    }
+    td.pivoted span{
+      /* display: inline-block; */
+      display: block;
+      min-height: 1rem;
+
+    }
+    .responsiveTable th.pivoted, td.pivoted
+
+    .responsiveTable td.pivoted a {
+        padding-right: 2em;
+    }
+  
+    .responsiveTable th .tdBefore, td .tdBefore {
+      /* Now like a table header */
+      position: absolute;
+      display: block;
+  
+      /* Top/left values mimic padding */
+      left: 1rem;
+      width: calc(60% - 20px);
+      white-space: pre-wrap;
+      overflow-wrap: break-word;
+      text-align: left !important;
+      font-weight: 600;
+    }
+    .responsiveTable tr {
+      display: block;
+      margin-bottom: 0.625em;
+    }
+    .responsiveTable tr > :first-child{
+      border: 0;
+    } 
+
+  }
+
+  @media screen and (max-width:768px) {
+    /* Fix table header too short for mobile*/
+    .responsiveTable th.pivoted, .responsiveTable td.pivoted {
+      /* padding-left: calc(30% + 10px) !important; */
+      min-height: 7rem;
+    }
+    .responsiveTable th .tdBefore, td .tdBefore {
+      width: calc(35% - 20px);
+    }
+  }

@@ -1,0 +1,21 @@
+.custom-autocomplete {
+  .MuiInputBase-root.MuiOutlinedInput-root.MuiAutocomplete-inputRoot.MuiInputBase-fullWidth.MuiInputBase-formControl.MuiInputBase-adornedEnd.MuiOutlinedInput-adornedEnd {
+    height: auto;
+  }
+  .css-r4c50g-MuiButtonBase-root-MuiChip-root {
+    // background-color: lightblue;
+    border-radius: 16px;
+  }
+  .css-r4c50g-MuiButtonBase-root-MuiChip-root .MuiChip-deleteIcon {
+    -webkit-tap-highlight-color: transparent;
+    color: aliceblue;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 5px 0 -6px;
+    margin-right: 4px;
+    margin-left: -4px;
+  }
+  .css-r4c50g-MuiButtonBase-root-MuiChip-root .MuiChip-deleteIcon:hover {
+    color: darkslategrey;
+  }
+}

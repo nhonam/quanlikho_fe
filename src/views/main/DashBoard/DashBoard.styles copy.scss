@@ -1,0 +1,99 @@
+#DashBoard {
+  .card-body {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+    .chiba-title-chart {
+        padding: 10px;
+        color: #fff;
+        background-color:#2584ce;
+        margin-bottom: 3%;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .chiba-input {
+        padding: 1px 0.75rem;
+    }
+    .chiba-flex {
+        display: flex;
+        font-size: 15px;
+    }
+    .chiba-bold {
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .chiba-search {
+        width: 30%;
+        padding-right: 4px;
+        padding-left: 13px;
+    }
+    .search-btn {
+        width: 100%;
+    }
+    .chiba-table-header {
+        display: grid;
+        button {
+          margin-top: 0.5rem;
+        }
+      }
+      .search-btn .name {
+          display: inline-block;
+        }
+      .col-search ,.col-week,.col-search-month-quater,.col-month-year,.col-year,.col-button, .col-start,.col-end{
+          width: 100%;
+      }
+      .MuiOutlinedInput-adornedEnd{
+        padding-right: 0!important;
+      }
+      .row.chiba-input > *{
+        margin-bottom: 7px;
+      }
+      @media screen and (min-width: 768px){
+        .row.chiba-input > *{
+            margin-bottom: 0;
+        }
+        .col-search {
+            width: 26%;
+        }
+        .col-start,.col-end{
+            width: 30%;
+        }
+        .col-week {
+            width: 40%;
+        }
+        .col-search-month-quater {
+            width: 35%;
+        }
+        .col-month-year {
+            width: 25.5%;
+        }
+        .col-year {
+            width: 20%;
+        }
+        .col-button {
+            width: 14%;
+        }
+        .search-btn .name {
+            display: none;
+        }
+         
+      }
+      @media screen and (min-width: 1209px){
+        .search-btn .name {
+            display: inline;
+        }
+          .col-week {
+            width: 35%;
+        }
+          .col-button {
+            width: 19%;
+        }
+        .col-start,.col-end {
+            width: 27.5%;
+        }
+        .col-month-year {
+            width: 23%;
+        }
+       
+      }
+     
+}

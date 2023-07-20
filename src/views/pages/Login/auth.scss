@@ -1,0 +1,95 @@
+// @import "./variables";
+
+// @import "~@fortawesome/fontawesome-free/css/all.css";
+// @import "~bootstrap/scss/bootstrap.scss";
+
+html,
+body,
+#root {
+    height: 100%;
+}
+
+.btn {
+    &:focus,
+    &:active {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}
+
+a {
+    &:focus,
+    &:active {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}
+
+.auth {
+    .auth-background-holder {
+        height: 100vh;
+        min-height: 100%;
+    }
+}
+
+.auth-main-col,
+.auth-background-col {
+    position: relative;
+}
+
+.auth-main-col {
+    margin: auto;
+    padding-top: 15%;
+    background: rgb(54, 53, 53);
+    height: 100%;
+}
+
+.auth-background-col {
+    background: rgba(173, 173, 173, 0.1)
+}
+
+.auth-background-mask {
+    background-image: url(https://mekongsoft.com.vn/assets/images/tintuc/d736ad4409a6557b71cea30880fd3f51.png);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.auth-wrapper {
+    background: white;
+    height: 100vh;
+
+    .auth-body {
+        width: 360px;
+    }
+
+    .auth-heading {
+        font-size: 1.5rem;
+    }
+
+    .auth-option {
+        font-size: 0.875rem;
+        > a {
+            color: rgba(173, 173, 173, 0.1)
+        }
+    }
+
+    .forgot-password {
+        > a {
+            color: rgba(173, 173, 173, 0.1)
+        }
+    }
+
+    input:focus {
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .auth-background-col {
+        display: none;
+    }
+}

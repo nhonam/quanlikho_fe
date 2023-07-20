@@ -1,0 +1,26 @@
+.btn-scroll-group {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 4%;
+    right: 0;
+    padding: 8px 4px;
+    z-index: 999;
+
+    .btn-scroll {
+        outline: none !important;
+        font-size: 32px;
+        transition: all 0.5s linear;
+        padding: 8px;
+        border-radius: 4px;
+
+        .icon-button-scroll {
+            color: white;
+            font-size: 1.2rem;
+        }
+    }
+
+    .btn-scroll+.btn-scroll {
+        margin-top: 6px;
+    }
+}

@@ -1,0 +1,58 @@
+#TTHC_Dashboard {
+  font-weight: bold;
+  font-family: "Time New Roman" !important;
+  .title {
+    margin: auto;
+    text-align: center;
+    font-weight: bold !important;
+    font-family: "Time New Roman" !important;
+    color: #8c8c8c;
+  }
+  .title.status.row {
+    width: 25%;
+  }
+  .MuiInputBase-input {
+    color: white !important;
+  }
+  label {
+    width: 100%;
+    margin: auto;
+  }
+  .title.row {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  #mucdo {
+    margin-left: 0%;
+    margin-top: 10%;
+  }
+  .body {
+    margin: auto;
+    padding-right: 1%;
+    margin-bottom: 2%;
+  }
+  .thongtin {
+    display: -webkit-box;
+    // border: 2px outset;
+    // background-color: #bbdbea;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    box-shadow: 10px 10px 17px -10px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 10px 10px 17px -10px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 10px 10px 17px -10px rgba(0, 0, 0, 0.6);
+  }
+  .themethirdcolor {
+    color: #ffce55 !important;
+  }
+  .themeprimary {
+    color: #2dc3e8 !important;
+  }
+  @media screen and (max-width: 767px) {
+    #mucdo {
+      margin-top: 5%;
+    }
+    .title.status.row {
+      width: auto;
+    }
+  }
+}
